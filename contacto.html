@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos Barbería Alura</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <section class="header__container">
+            <h1>
+                <img src="./imagenes/logo.png" alt="">
+            </h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="productos.html">Productos</a>
+                    </li>
+                    <li>
+                        <a href="#">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section class="contacto-form">
+            <form action="">
+                <div class="inputs-container inputs-nombre-apellido">
+                    <div>
+                        <label for="inp-nombre">Nombre</label>
+                        <input type="text" id="inp-nombre" class="input-styles" required>
+                    </div>
+
+                    <div>
+                        <label for="inp-apellido">Apellido</label>
+                        <input type="text" id="inp-apellido" class="input-styles" required>
+                    </div>
+                </div>
+                <div class="inputs-container inputs-correo-tel">
+                    <div>
+                        <label for="correo-electronico">Correo Electrónico</label>
+                        <input type="email" id="correo-electronico" class="input-styles" placeholder="example@tudominio.com" required>
+                    </div>
+                
+                    <div>
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" class="input-styles" placeholder="(XXX) XXXXXXXX" required>
+                    </div>
+                </div>
+    
+                <fieldset class="text-area-container">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensajes" id="mensaje" cols="70" rows="10" placeholder="Hola, me gustaría..." required></textarea>
+                </fieldset>
+
+                <fieldset class="inputs-radio">
+                    <legend>¿Cómo le gustaría que lo contactemos?</legend>
+                    <label for="radio-email"><input type="radio" name="contact" id="radio-email">Email</label>
+
+                    <label for="radio-telefono"><input type="radio" name="contact" id="radio-telefono">Teléfono</label>
+
+                    <label for="radio-whatsapp"><input type="radio" name="contact" id="radio-whatsapp" checked>Whatsapp</label>
+                </fieldset>
+
+                <fieldset class="select-container">
+                    <legend>¿En qué horario prefiere ser atendido?</legend>
+                    <select>
+                        <option value="">Mañana</option>
+                        <option value="">Tarde</option>
+                        <option value="">Noche</option>
+                    </select>
+                </fieldset>
+
+                <fieldset class="container-checkbox">
+                    <label for="checkbox"><input type="checkbox" id="checkbox" checked>Quieres recibir notificaciones de Barbería-A</label>
+                </fieldset>
+
+                <input type="submit" value="enviar" id="btn-submit">
+            </form>
+        </section>
+
+        <section class="horario-atencion-contenedor">
+            <table class="horario-atencion">
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Hora</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>08h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Miércoles</td>
+                        <td>08h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>08h ~ 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <img src="./imagenes/logo-blanco.png" alt="">
+        <p class="copyright"> &copy Copyright Barbería Alura - 2022</p>
+    </footer>
+</body>
+</html>

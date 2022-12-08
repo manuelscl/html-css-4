@@ -1,0 +1,206 @@
+* {
+    font-size: 62.5%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background: rgb(203, 203, 203);
+}
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 0 0 25px;
+    list-style: none;
+}
+nav ul li a {
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(16, 16, 16);
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+nav ul li a:hover {
+    color: rgb(177, 152, 14);
+    text-decoration: underline;
+}
+
+/* Product cards */
+.product__cards {
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 auto;
+    padding: 60px 0;
+    gap: 17px;
+}
+.cards {
+    width: 300px;
+    list-style: none;
+    border: 2px solid rgb(16, 16, 16);
+    border-radius: 8px;
+    padding: 20px 20px;
+    transition: 0.3s ease;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.cards:hover {
+    border-color:rgb(177, 152, 14);
+    transform: translate(0, -5px);
+    box-shadow: 0 0 40px 2px rgba(16, 16, 16, 0.187);
+}
+.cards:active {
+    border-color: rgb(95, 82, 0);
+}
+.cards:hover .cards__title {
+    font-size: 2.5rem;
+}
+.cards__title {
+    font-size: 2.7rem;
+    transition: 0.3s ease;
+}
+.cards__description {
+    font-size: 2rem;
+}
+.cards__price {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: url('./imagenes/bg.jpg');
+    color: #fff;
+}
+.copyright {
+    font-size: 2rem;
+}
+
+/* Contact */
+fieldset {
+    border: 0;
+}
+.contacto-form {
+    width: 940px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+.inputs-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 30px;
+}
+.inputs-container div {
+    display: flex;
+    flex-direction: column;
+}
+.inputs-container div label {
+    margin: 0 0 10px 0;
+}
+label, input {
+    font-size: 18px;
+}
+
+.input-styles {
+    padding: 8px 20px;
+}
+.text-area-container {
+    display: flex;
+    flex-direction: column;
+}
+.text-area-container label {
+    margin-bottom: 10px;
+}
+.text-area-container textarea {
+    height: 150px;
+    font-size: 18px;
+    padding: 10px;
+}
+.inputs-radio {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.inputs-radio label input {
+    transform: scale(1.2);
+    margin-right: 10px;
+}
+.inputs-radio legend {
+    font-size: 18px;
+    margin: 0 0 20px 0;
+}
+.select-container {
+    margin-top: 30px;
+}
+.select-container legend {
+    font-size: 18px;
+    padding: 10px 0;
+}
+select {
+    width: 35%;
+    padding: 10px 5px;
+    font-size: 18px;
+}
+select option {
+    font-size: 18px;
+}
+.container-checkbox {
+    margin: 40px 0 0 0;
+}
+.container-checkbox label input {
+    transform: scale(1.2);
+    margin-right: 10px;
+}
+#btn-submit {
+    width: 35%;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: rgb(177, 152, 14);
+    margin-top: 30px;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+#btn-submit:hover {
+    background: rgb(111, 96, 6);
+}
+
+/* Horarios */
+.horario-atencion-contenedor {
+    width: 940px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+table {
+    margin: 40px 40pxs;
+}
+thead {
+    background: rgb(199, 199, 199);
+    color: white;
+    font-weight: bold;
+}
+td, th {
+    font-size: 18px;
+    border: 1px solid black;
+    padding: 6px 20px;
+}

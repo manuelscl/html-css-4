@@ -1,0 +1,66 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    padding: 10px;
+}
+.seccion__principal {
+    padding: 10px;
+}
+
+.img__principal {
+    width: 100%;
+}
+
+.seccion__nosotros {
+    background: rgb(223, 223, 231);
+    text-align: center;
+    padding: 50px 20px;
+    margin: 10px;
+}
+.seccion__nosotros h2 {
+    font-size: 28px;
+}
+#direccion {
+    font-size: 20px;
+}
+#direccion strong {
+    color: rgb(255, 67, 67);
+}
+
+.mision {
+    font-size: 20px;
+}
+.mision em strong {
+    color:rgb(255, 67, 67);
+}
+.servicios {
+    font-size: 20px;
+}
+
+/* seccion diferenciales */
+.diferenciales__title {
+    font-size: 26px;
+    text-align: center;
+}
+.diferenciales__container {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.diferenciales__info {
+    width: 30%;
+    font-size: 20px;
+}
+.diferenciales__img {
+    display: flex;
+    justify-content: right;
+    width: 40%;
+}
+.diferenciales__img img {
+    width: 100%;
+}
