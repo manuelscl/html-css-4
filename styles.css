@@ -91,6 +91,59 @@ footer {
     font-size: 2rem;
 }
 
+/* Home */
+.titulo-p {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+.seccion__principal img {
+    width: 100%;
+}
+.seccion__nosotros {
+    background: rgb(251, 251, 251);
+}
+.nosotros__contenido {
+    width: 940px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+.seccion__nosotros p {
+    font-size: 1.8rem;
+    line-height: 34px;
+}
+.italic-s,
+.strong-s {
+    font-size: 1.8rem;
+}
+
+.diferenciales {
+    width: 940px;
+    margin: 80px auto 80px;
+}
+.diferenciales__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.diferenciales__info .lista .lista__items {
+    font-size: 18px;
+    line-height: 34px;
+}
+
+.lista__items:nth-child(1) {
+    font-weight: bold;
+}
+.diferenciales__img {
+    width: 500px;
+}
+.diferenciales__img img {
+    width: 100%;
+}
+.mapa__google {
+    width: 100%;
+    margin: 50px auto 0;
+}
 /* Contact */
 fieldset {
     border: 0;
